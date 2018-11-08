@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 Animation</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS",sans-serif;
+        }
+        .simple{
+            width: 100px;
+            height: 100px;
+            background-color: lightsalmon;
+            border-radius: 50%;
+            box-shadow: 0 0 15px black;
+            border: 20px solid orangered;
+            animation: simple 4s infinite linear;
+        }
+        @keyframes simple {
+            0%,50%,100%{
+                background-color: lightsalmon;
+                border-color: orangered;
+
+            }
+            25%,75%{
+                background-color: orangered;
+                border-color: lightsalmon;
+            }
+
+        }
+        .spin{
+            width: 100px;
+            height: 100px;
+            border: 2px solid lightsalmon;
+            box-shadow: 0 0 15px black;
+            border-radius: 50%;
+            border-top: 20px solid orangered;
+            animation: spin 4s infinite linear;
+        }
+        @keyframes spin {
+        0%{
+            transform: rotate(0deg);
+        }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .news{
+            background-color: lightsalmon;
+            text-align: center;
+            width: 75%;
+            font-size: 18px;
+            padding: 10px;
+            border:15px solid orangered;
+            border-radius: 50px;
+            box-shadow: 0 0 15px black;
+            overflow: hidden;
+        }
+        .news p{
+            margin: 0px;
+            animation: news 10s infinite linear;
+
+        }
+
+        @keyframes  news {
+            0%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+        }
+        .animate{
+            margin-bottom: 200px;
+            width: 100px;
+            height: 100px;
+            background-color: lightsalmon;
+            box-shadow: 0 0 15px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Simple Animation</h3>
+    <div class="simple"></div>
+
+    <hr>
+
+    <h3>Spin Animation</h3>
+    <div class="spin"></div>
+
+    <hr>
+
+    <h3>News Animation</h3>
+    <div class="news">
+        <p>Latest News: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, voluptatibus?</p>
+    </div>
+
+    <hr>
+
+    <!-- Box Animation -->
+    <h3>Box Animation</h3>
+    <div class="animate"></div>
+
+    <hr>
+
+    <!-- Foot Ball Animation -->
+    <h3>Foot Ball Animation</h3>
+    <div class="football"></div>
+    <hr>
+
+</body>
+</html>

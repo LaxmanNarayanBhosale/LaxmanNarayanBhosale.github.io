@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Borders</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS",sans-serif;
+        }
+        div{
+            background-color: blue;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            width: 500px;
+        }
+
+        #movie{
+            padding: 0px;
+            margin-bottom: 150px;
+            border-left: 60px solid red;
+            border-top: 60px solid yellow;
+            border-bottom: 60px solid orangered;
+            border-right: 60px solid orangered;
+            box-shadow: 0 0 15px black;
+            background-color: black;
+        }
+
+        #rounded-all{
+            border: 10px solid orangered;
+            border-radius: 20px;
+        }
+
+        #rounded-two{
+            border: 10px double orange;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<!-- BORDER TOP -->
+<div style="border-top: 10px solid orangered">
+    <h1>BORDER TOP</h1>
+</div>
+
+<!-- BORDER RIGHT -->
+<div style="border-right: 10px solid orangered">
+    <h1>BORDER RIGHT</h1>
+</div>
+
+<!-- BORDER BOTTOM -->
+<div style="border-bottom: 10px  solid orangered">
+    <h1>BORDER BOTTOM</h1>
+</div>
+
+<!-- BORDER LEFT -->
+<div style="border-left: 10px solid orangered">
+    <h1>BORDER LEFT</h1>
+</div>
+
+<!-- BORDER ALL SIDES -->
+<div style="border: 10px solid orangered;">
+    <h1>BORDER ALL</h1>
+</div>
+
+<!-- ROUNDER BORDER ALL SIDES -->
+<div id="rounded-all">
+    <h1>ROUNDED ALL</h1>
+</div>
+
+<!-- ROUNDED TWO SIDES -->
+<div id="rounded-two">
+    <h1>ROUNDED TWO</h1>
+</div>
+
+<!-- CUSTOM BORDER -->
+<div id="movie">
+
+</div>
+
+
+</body>
+</html>
